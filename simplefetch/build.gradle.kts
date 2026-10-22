@@ -27,3 +27,20 @@ kotlin {
         }
     }
 }
+
+group = "io.bandroid.simplefetch"
+version = "1.0.0"
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/" + (System.getenv("GITHUB_REPOSITORY") ?: "bandroid/SimpleFetch"))
+            credentials {
+                username = System.getenv("GITHUB_ACTOR") ?: System.getenv("USERNAME")
+                password = System.getenv("GITHUB_TOKEN") ?: System.getenv("TOKEN")
+            }
+        }
+    }
+}
+
