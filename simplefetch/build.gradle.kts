@@ -44,3 +44,8 @@ publishing {
     }
 }
 
+tasks.register("test") {
+    dependsOn("allTests")
+    description = "Runs all unit tests for SimpleFetch multiplatform targets"
+    group = "verification"
+}

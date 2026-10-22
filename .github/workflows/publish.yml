@@ -38,7 +38,7 @@ jobs:
         run: chmod +x gradlew || true
 
       - name: Run Library Unit Tests
-        run: ./gradlew :simplefetch:test
+        run: ./gradlew :simplefetch:allTests
 
       - name: Run Sample App Tests (Optional)
         run: ./gradlew :app:test --continue || echo "Sample app tests finished with warnings; proceeding with publishing."
