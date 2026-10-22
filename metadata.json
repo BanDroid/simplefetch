@@ -1,0 +1,6 @@
+{
+  "name": "SimpleFetch",
+  "description": "A lightweight, zero-abstraction REST data fetching library for Compose Multiplatform with dynamic JSON maps and an interactive tester.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
